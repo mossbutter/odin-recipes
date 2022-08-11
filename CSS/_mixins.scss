@@ -1,0 +1,84 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* $radius is the parameter of the function */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin main-card-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+@mixin toolbar-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    background-color: $toolbar-color;
+    color: $primary-color;
+    box-shadow: $box-shadow;
+    width: 60%;
+    
+}
+
+@mixin link-decor {
+    text-decoration: underline;
+    text-decoration-color: #000;
+    -webkit-text-decoration-color: #000;
+}
+
+@mixin logo-params {
+    float: right;
+    max-width: 20em;
+    max-height: 20em;
+}
+
+@mixin background-img {
+    background-image: url("../images/pattern.png");
+    background-position: auto;
+    background-repeat: repeat;
+    background-size: 55%;
+}
+
+/* nav links off until fixed */
+@mixin nav-flex {
+    display: none;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@mixin card_dark-a {
+    
+        a:link {
+        text-decoration: underline;
+        text-decoration-color: #fff;
+        -webkit-text-decoration-color: #fff;
+        }
+        a:active {
+            text-decoration: underline;
+            text-decoration-color: #fff;
+            -webkit-text-decoration-color: #fff;
+            }
+            a:hover {
+                text-decoration: underline;
+                text-decoration-color: #fff;
+                -webkit-text-decoration-color: #fff;
+                }
+                a:visited {
+                    text-decoration: underline;
+                    text-decoration-color: #fff;
+                    -webkit-text-decoration-color: #fff;
+                    }
+}
+

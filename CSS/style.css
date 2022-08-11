@@ -1,0 +1,193 @@
+/* $radius is the parameter of the function */
+/* nav links off until fixed */
+.card {
+  background-color: white;
+  width: 20rem;
+  overflow: hidden;
+  margin: 2rem;
+  box-shadow: 5px 5px 5px 5px #000;
+  border-radius: 0.5rem;
+  /* using the mixins function */
+}
+.card img {
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}
+.card .card_content {
+  padding: 2rem;
+}
+.card .card_title {
+  margin: 0;
+}
+.card .card_description {
+  margin: 0;
+  color: rgb(102, 99, 99);
+}
+.card_dark {
+  background-color: black;
+  color: #fff;
+}
+.card_dark a:link {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  -webkit-text-decoration-color: #fff;
+}
+.card_dark a:active {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  -webkit-text-decoration-color: #fff;
+}
+.card_dark a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  -webkit-text-decoration-color: #fff;
+}
+.card_dark a:visited {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  -webkit-text-decoration-color: #fff;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  max-height: 900px;
+}
+.intro .card_description {
+  color: rgb(102, 99, 99);
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.ingred {
+  display: flex;
+  justify-content: baseline;
+  flex-direction: column;
+  color: rgb(153, 153, 153);
+  max-height: 800px;
+}
+.ingred h2 {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  -webkit-text-decoration-color: #fff;
+}
+.ingred ul {
+  margin: 0;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(102, 99, 99);
+  max-height: 400px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../images/pattern.png");
+  background-position: auto;
+  background-repeat: repeat;
+  background-size: 55%;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #7ea785;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+header {
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  background-color: #fff;
+  color: #7ea785;
+  box-shadow: 5px 5px 5px 5px #000;
+  width: 60%;
+  margin-bottom: inherit;
+  margin-top: -50px;
+}
+
+/* nav links off until fixed */
+nav {
+  display: none;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  color: #000;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+img {
+  width: auto;
+}
+
+.logo {
+  float: right;
+  max-width: 20em;
+  max-height: 20em;
+}
+
+footer {
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  background-color: #fff;
+  color: #7ea785;
+  box-shadow: 5px 5px 5px 5px #000;
+  width: 60%;
+  color: #000;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: #000;
+  -webkit-text-decoration-color: #000;
+}
+
+a:link {
+  color: #7ea785;
+}
+
+a:visited {
+  color: #7ea785;
+}
+
+a:hover {
+  color: #57b3b7;
+}
+
+a:active {
+  color: #57b3b7;
+}
+
+.foot-link {
+  padding: 10px;
+}
+
+h2 {
+  color: #7ea785;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  -webkit-text-decoration-color: #000;
+}
+
+span.text_highlight {
+  background-color: #7ea785;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

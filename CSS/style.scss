@@ -1,0 +1,93 @@
+@import 'variables';
+@import 'mixins';
+@import 'card';
+@import 'recipes';
+   
+body {
+    @include flex-center();
+    @include background-img();
+    font-family: $fonts;
+    background-color: $primary-color;
+    padding: $spacing;
+    min-height: 100vh;
+   
+  }
+
+
+header {
+  @include border-radius(0.5rem);
+  @include toolbar-flex();
+  margin-bottom: inherit;
+  margin-top: -50px;
+}
+
+/* nav links off until fixed */
+nav {
+  @include nav-flex();
+  color: #000;
+}
+
+
+main {
+    @include main-card-flex ();
+}
+
+
+img {
+    width: auto;
+}
+
+
+.logo {
+    @include logo-params();
+     }
+
+footer {
+    @include border-radius(0.5rem);
+    @include toolbar-flex();
+    color: #000;
+    
+}
+
+a {
+
+  @include link-decor();
+}
+
+  a:link {
+   
+    color: $primary-color;
+  }
+      a:visited {
+    
+    color: $primary-color;
+  }
+
+  a:hover {
+    
+    color: $highlight-color;
+  }
+  
+  a:active {
+   
+    color: $highlight-color;
+  }
+
+
+
+.foot-link {
+    padding: 10px;
+}
+
+h2 {
+  color: $primary-color;
+  @include link-decor();
+}
+
+
+
+span.text_highlight {
+  background-color: $primary-color;
+  color: #fff;
+  
+}

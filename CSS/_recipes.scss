@@ -1,0 +1,50 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: $spacing;
+    max-height: 900px;
+
+    .card_description {
+        color: $darker-grey; 
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+
+}
+
+.ingred {
+   
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    color: $dark-grey;
+    max-height: 800px;
+
+  
+
+    h2 {
+        text-decoration: underline;
+        text-decoration-color: #fff;
+        -webkit-text-decoration-color: #fff;
+    }
+             
+    ul {
+        margin: 0;
+    }
+
+}
+
+
+ .steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: $darker-grey;    
+    max-height: 400px;
+}
+  
+        
+        
+

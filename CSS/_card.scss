@@ -1,0 +1,38 @@
+.card {
+    background-color: white;
+    width: 20rem;
+    overflow: hidden;
+    margin: 2rem;
+    box-shadow: $box-shadow;
+    @include border-radius(0.5rem); /* using the mixins function */
+    
+
+    img {
+        height: 15rem;
+        background-size: cover;
+        background-position: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card_content {
+        padding: $spacing;
+    }
+
+    .card_title {
+        margin: 0;
+        
+    }
+
+    .card_description {
+        margin: 0;
+        color: $darker-grey;
+    }
+
+    &_dark {
+        @include card_dark-a();
+        background-color: black;
+        color: #fff;
+    }
+
+}
