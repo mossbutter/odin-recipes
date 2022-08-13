@@ -4,11 +4,11 @@
     overflow: hidden;
     margin: 2rem;
     box-shadow: $box-shadow;
-    @include border-radius(0.5rem); /* using the mixins function */
-    
+    @include border-radius(0.5rem);
+    color: $darker-grey;
+
 
     img {
-        height: 15rem;
         background-size: cover;
         background-position: center;
         max-width: 100%;
@@ -21,18 +21,18 @@
 
     .card_title {
         margin: 0;
-        
+
     }
 
     .card_description {
         margin: 0;
-        color: $darker-grey;
+
     }
 
     &_dark {
         @include card_dark-a();
         background-color: black;
-        color: #fff;
+        color: $dark-grey;
     }
 
 }

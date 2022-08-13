@@ -2,22 +2,22 @@
 @import 'mixins';
 @import 'card';
 @import 'recipes';
-   
+
 body {
-    @include flex-center();
-    @include background-img();
-    font-family: $fonts;
-    background-color: $primary-color;
-    padding: $spacing;
-    min-height: 100vh;
-   
-  }
+  @include flex-center();
+  @include background-img();
+  font-family: $fonts;
+  background-color: $primary-color;
+  padding: $spacing;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
 
 
 header {
   @include border-radius(0.5rem);
   @include toolbar-flex();
-  margin-bottom: inherit;
   margin-top: -50px;
 }
 
@@ -29,24 +29,25 @@ nav {
 
 
 main {
-    @include main-card-flex ();
+  @include main-card-flex ();
 }
 
 
 img {
-    width: auto;
+  width: auto;
 }
 
 
 .logo {
-    @include logo-params();
-     }
+  @include logo-params();
+}
 
 footer {
-    @include border-radius(0.5rem);
-    @include toolbar-flex();
-    color: #000;
-    
+  @include border-radius(0.5rem);
+  @include toolbar-flex();
+  color: #000;
+  margin-bottom: 1%;
+
 }
 
 a {
@@ -54,29 +55,30 @@ a {
   @include link-decor();
 }
 
-  a:link {
-   
-    color: $primary-color;
-  }
-      a:visited {
-    
-    color: $primary-color;
-  }
+a:link {
 
-  a:hover {
-    
-    color: $highlight-color;
-  }
-  
-  a:active {
-   
-    color: $highlight-color;
-  }
+  color: $primary-color;
+}
+
+a:visited {
+
+  color: $primary-color;
+}
+
+a:hover {
+
+  color: $highlight-color;
+}
+
+a:active {
+
+  color: $highlight-color;
+}
 
 
 
 .foot-link {
-    padding: 10px;
+  padding: 10px;
 }
 
 h2 {
@@ -89,5 +91,6 @@ h2 {
 span.text_highlight {
   background-color: $primary-color;
   color: #fff;
-  
+
 }
+

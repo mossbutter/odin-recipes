@@ -1,50 +1,147 @@
 .intro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: $spacing;
-    max-height: 900px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-    .card_description {
-        color: $darker-grey; 
-        padding-top: 0%;
-        padding-bottom: 0%;
-    }
+  .card_description {
+    color: $darker-grey;
+    font-size: larger;
+  }
 
+  .card_title {
+    padding-left: 10%;
+    margin-bottom: $margin-padding;
+    margin-top: $margin-padding;
+  }
 
 }
 
 .ingred {
-   
-    display: flex;
-    justify-content: baseline;
-    flex-direction: column;
-    color: $dark-grey;
-    max-height: 800px;
 
-  
+  display: flex;
+  justify-content: baseline;
+  flex-direction: column;
+  color: $dark-grey;
+  max-height: 800px;
 
-    h2 {
-        text-decoration: underline;
-        text-decoration-color: #fff;
-        -webkit-text-decoration-color: #fff;
-    }
-             
-    ul {
-        margin: 0;
-    }
+  .card_title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
+  h2 {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    -webkit-text-decoration-color: #fff;
+  }
+
+  ul {
+    margin: 0;
+  }
 
 }
 
 
- .steps {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: $darker-grey;    
-    max-height: 400px;
-}
-  
-        
-        
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: $darker-grey;
+  max-height: 50em;
 
+
+  .card_title {
+    margin: 0;
+  }
+
+}
+
+
+
+.recipe_header {
+  @include border-radius(0.5rem);
+  max-width: 20rem;
+}
+
+
+.recipe_attr {
+  max-width: 20rem;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 22px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000), linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000);
+  background-color: white;
+  background-size: 4px 4px;
+  background-position: 0 0, 2px 2px;
+  width: 10px;
+  border-left: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 20px;
+  box-sizing: content-box;
+  background-color: $primary-color;
+  border: 2px solid black;
+  border-right: none;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:horizontal:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment {
+  display: block;
+}
+
+::-webkit-scrollbar-button:vertical:start {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: url("../images/icon/scrollbar-up-active.svg");
+}
+
+::-webkit-scrollbar-button:vertical:start:active {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: url("../images/icon/scrollbar-up-active.svg");
+}
+
+::-webkit-scrollbar-button:vertical:end {
+  height: 23.38px;
+  background-image: url("../images/icon/scrollbar-down-active.svg");
+}
+
+::-webkit-scrollbar-button:vertical:end:active {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: url("../images/icon/scrollbar-down-active.svg");
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: url("../images/icon/scrollbar-left.svg");
+}
+
+::-webkit-scrollbar-button:horizontal:start:active {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: url("../images/icon/scrollbar-left-active.svg");
+}
+
+::-webkit-scrollbar-button:horizontal:end {
+  height: 23.38px;
+  background-image: url("../images/icon/scrollbar-right.svg");
+}
+
+::-webkit-scrollbar-button:horizontal:end:active {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: url("../images/icon/scrollbar-right-active.svg");
+}

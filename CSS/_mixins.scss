@@ -5,7 +5,6 @@
     flex-direction: column;
 }
 
-/* $radius is the parameter of the function */
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -25,11 +24,11 @@
     align-items: center;
     justify-content: center;
     height: 55px;
+    width: 60%;
     background-color: $toolbar-color;
     color: $primary-color;
     box-shadow: $box-shadow;
-    width: 60%;
-    
+
 }
 
 @mixin link-decor {
@@ -59,26 +58,28 @@
 }
 
 @mixin card_dark-a {
-    
-        a:link {
+
+    a:link {
         text-decoration: underline;
         text-decoration-color: #fff;
         -webkit-text-decoration-color: #fff;
-        }
-        a:active {
-            text-decoration: underline;
-            text-decoration-color: #fff;
-            -webkit-text-decoration-color: #fff;
-            }
-            a:hover {
-                text-decoration: underline;
-                text-decoration-color: #fff;
-                -webkit-text-decoration-color: #fff;
-                }
-                a:visited {
-                    text-decoration: underline;
-                    text-decoration-color: #fff;
-                    -webkit-text-decoration-color: #fff;
-                    }
-}
+    }
 
+    a:active {
+        text-decoration: underline;
+        text-decoration-color: #fff;
+        -webkit-text-decoration-color: #fff;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fff;
+        -webkit-text-decoration-color: #fff;
+    }
+
+    a:visited {
+        text-decoration: underline;
+        text-decoration-color: #fff;
+        -webkit-text-decoration-color: #fff;
+    }
+}
