@@ -10,3 +10,5 @@ In this project I made a recipe website through The Odin Project foundations.
 **Takeaway on completion:** Definitely became comfortable with git, learned how to use: mixins, variables and nesting with SCSS. I'm happy with how it came out!
 
 **Time to complete:** 1 week, around 4 hrs/day
+
+**Pain points: I need to add media queries.
