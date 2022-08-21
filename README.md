@@ -12,3 +12,6 @@ In this project I made a recipe website through The Odin Project foundations.
 **Time to complete:** 1 week, around 4 hrs/day
 
 **Pain points: I need to add media queries.
+
+Acknowledgements:
+[How to use SASS with Css](https://www.freecodecamp.org/news/how-to-use-sass-with-css/) via freecodecamp
